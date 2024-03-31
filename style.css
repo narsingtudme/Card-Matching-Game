@@ -1,0 +1,37 @@
+body {
+    background-image: url('memory.jpg'); /* Add background image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.memory-game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc00; /* Change card background color */
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card.matched {
+    background-color: green;
+    cursor: default;
+}
+
+.card.flipped {
+    background-color: #fff; /* Change flipped card background color */
+}
